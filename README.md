@@ -1,5 +1,6 @@
 # For run the application with Docker, run:
 
+#### !!!!Docker and docker-compose must support docker-compose.yml version "3.8" (working on: Docker version 20.10.21 | Docker Compose version v2.13.0)
     sh init.sh
 
 #### Data is automatically entered into the database from the file `/Docker/mysql/Sample.sql`
