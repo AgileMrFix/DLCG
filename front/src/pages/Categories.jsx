@@ -1,7 +1,8 @@
 import {useEffect, useState} from "react";
-import {Col, Container, Row, ListGroup} from "react-bootstrap";
+import {Col, Container, Row, ListGroup, Button} from "react-bootstrap";
 import {CategoryService} from "../services/CategoryService.js";
 import {Branch} from "../components/Node/Branch.jsx";
+import {Link} from "react-router-dom";
 
 export default function Categories() {
   const [categories, setCategories] = useState([])
@@ -32,7 +33,7 @@ export default function Categories() {
         {loading &&
         <div >Loading...</div>
         }
-        <Col>
+        <Col md="auto">
           <Container>
             <ListGroup>{categories.map(Branch)}</ListGroup>
           </Container>
