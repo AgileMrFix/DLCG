@@ -1,4 +1,3 @@
-
 cp ./back/.env.example ./back/.env &&
 
 echo "Copy env file for backend - DONE"
@@ -6,6 +5,8 @@ echo "Copy env file for backend - DONE"
 cp ./front/.env.example ./front/.env.production
 
 echo "Copy env file for frontend - DONE"
+
+echo "Building..."
 
 docker-compose  --env-file ./back/.env build
 
