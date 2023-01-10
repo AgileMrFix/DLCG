@@ -24,15 +24,4 @@ class ProductController extends Controller
         return ProductResource::make($product);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Product $product
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Product $product)
-    {
-        //
-    }
-
 }

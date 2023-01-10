@@ -16,5 +16,5 @@ use \App\Http\Controllers\ProductController;
 |
 */
 
-Route::apiResource('categories', CategoryController::class)->only('index', 'store');
+Route::apiResource('categories', CategoryController::class)->only('index');
 Route::apiResource('products', ProductController::class)->only('store');
